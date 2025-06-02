@@ -2,118 +2,65 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>الهكر العربي - روني البحيره</title>
-  <style>
-    body {
-      background-color: #000;
-      color: #00f7ff;
-      font-family:  Cairo , sans-serif;
-      padding: 20px;
-      text-align: center;
-      overflow-x: hidden;
-    }
-    .glow {
-      font-size: 20px;
-      animation: glow 2s ease-in-out infinite alternate;
-    }
-    @keyframes glow {
-      from {
-        text-shadow: 0 0 10px #00f7ff, 0 0 20px #00f7ff, 0 0 30px #00f7ff;
-      }
-      to {
-        text-shadow: 0 0 20px #00d9ff, 0 0 30px #00d9ff, 0 0 40px #00d9ff;
-      }
-    }
-    .menu {
-      position: fixed;
-      top: 10px;
-      left: 10px;
-      background: #00f7ff;
-      padding: 10px;
-      cursor: pointer;
-      border-radius: 5px;
-      color: black;
-    }
-    .sidebar {
-      display: none;
-      position: fixed;
-      top: 50px;
-      left: 10px;
-      background: #111;
-      padding: 10px;
-      border-radius: 5px;
-    }
-    .sidebar a {
-      color: #00f7ff;
-      display: block;
-      margin: 5px 0;
-    }
-    .upload {
-      margin-top: 30px;
-    }
-    .counter {
-      margin-top: 20px;
-      font-size: 18px;
-    }
-  </style>
+  <title>الهكر العربي روني البحيره</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="menu" onclick="toggleMenu()">☰</div>
-  <div class="sidebar" id="sidebar">
-    <a href="https://t.me/VlP_l1" target="_blank">تيليجرام</a>
-    <a href="https://www.instagram.com/yusef_.moh.ammed" target="_blank">انستجرام</a>
+
+<div class="main-container">
+  <h1 class="glow">🖤 الهكر العربي روني البحيره 🖤</h1>
+  
+  <p class="glow">مجرد دخولك هنا انت تحت حمايتي الشخصيه 👨‍💻</p>
+  <p class="glow">أنا روني البحيره، من الناس اللي بتحب البرمجة ومش بأذي حد، لكني مش بعلم عشان ميضرش حد، الي يقدر يستوعبني هيفهمني من غير شرح!</p>
+  <p class="glow">بحب أساعد، بس مش كل الناس تستاهل المساعدة. اخترت طريقي في الهكر الأخلاقي عشان أكون درع للضعفاء.</p>
+  <p class="glow">🚨 أي ملف مش آمن هيتمنع تلقائيًا 🚨</p>
+  <p class="glow">صلوا على سيدنا محمد ♥️</p>
+  <p class="glow">عدد الزوار: <span id="visitor-count">7078</span>+</p>
+
+  <div class="images">
+    <img src="rony1.jpg" alt="روني صورة 1">
+    <img src="rony2.jpg" alt="روني صورة 2">
   </div>
 
-  <h1 class="glow">⚡  الهكر العربي - روني البحيره ⚡</h1>
-  <p class="glow">✦ صلي علي سيدنا محمد ♥️</p>
-  <p class="glow">✦ مجرد دخولك هنا انت تحت حمايتي الشخصية 👨‍💻</p>
-  <p class="glow">
-    ✦ اسمي روني البحيره، رمز للهيبة والذكاء التقني.<br>
-    ✦ بدأت من لا شيء، والنهارده بفضل الله شغال في أعلى مستويات البرمجة والحماية.<br>
-    ✦ مطور محترف، مهووس بالكود، وقلبي دايمًا مع الناس الغلابة قبل القوية.<br>
-    ✦ لو دخلت هنا، فاعرف إنك في مملكة الراحة والبرمجة والتقنية.<br>
-    ✦ أنا مش بس مبرمج... أنا صانع حلول، وبنّاء أنظمة، وقائد تقني بفكر مختلف.<br>
-    ✦ بحب أساعد، وعمري ما استخدمت قوتي التقنية في الأذى.<br>
-    ✦ الكلمة مني حماية، والنصيحة مني كنز، والبوتات اللي بعملها تشهد.<br>
-    ✦ مجرد دخولك هنا... اعرف إنك في ضهر روني البحيره... وده لوحده أمان 💪<br>
-  </p>
+  <form id="uploadForm" enctype="multipart/form-data">
+    <input type="password" id="password" placeholder="ادخل كلمة السر" required>
+    <input type="file" id="fileInput" accept="video/*,image/*,.zip,.rar,.txt" required>
+    <button type="submit">ارفع الملف</button>
+    <p id="uploadStatus"></p>
+  </form>
 
-  <div class="upload">
-    <form onsubmit="return checkPassword()">
-      <input type="file" required><br><br>
-      <input type="password" id="password" placeholder="كلمة السر"><br><br>
-      <input type="submit" value="ارفع الملف">
-    </form>
-    <p id="msg" class="glow"></p>
+  <div class="social">
+    <a href="https://t.me/VlP_l1" target="_blank">📲 تواصل على تيليجرام</a><br>
+    <a href="https://www.instagram.com/yusef_.moh.ammed?igsh=M2lrZDgzYWFkYWYz" target="_blank">📸 انستجرام</a>
   </div>
+</div>
 
-  <div class="counter glow">
-    👁 عدد الزوار: <span id="visits">7078</span>
-  </div>
+<script>
+  let count = 7078;
+  setInterval(() => {
+    count += Math.floor(Math.random() * 2);
+    document.getElementById("visitor-count").innerText = count;
+  }, 3000);
 
-  <script>
-    function toggleMenu() {
-      const menu = document.getElementById( sidebar );
-      menu.style.display = menu.style.display ===  block  ?  none  :  block ;
+  const form = document.getElementById("uploadForm");
+  form.onsubmit = function(e) {
+    e.preventDefault();
+    const password = document.getElementById("password").value;
+    const status = document.getElementById("uploadStatus");
+    if (password !== "19022") {
+      status.innerText = "❌ كلمة السر غير صحيحة";
+      return;
     }
-
-    function checkPassword() {
-      const pass = document.getElementById("password").value;
-      const msg = document.getElementById("msg");
-      if (pass === "19022") {
-        msg.innerText = "✅ تم رفع الملف بنجاح (تجريبي)";
-      } else {
-        msg.innerText = "❌ كلمة السر غير صحيحة";
-      }
-      return false;
+    const file = document.getElementById("fileInput").files[0];
+    const unsafeTypes = [ exe ,  bat ,  sh ];
+    const ext = file.name.split( . ).pop().toLowerCase();
+    if (unsafeTypes.includes(ext)) {
+      status.innerText = "❌ الملف مرفوض لأنه غير آمن";
+    } else {
+      status.innerText = "✅ تم رفع الملف بنجاح (تجريبي)";
     }
+  };
+</script>
 
-    let visits = 7078;
-    setInterval(() => {
-      visits++;
-      document.getElementById("visits").innerText = visits;
-    }, 2000);
-  </script>
 </body>
 </html>
