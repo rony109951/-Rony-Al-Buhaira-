@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>روني البحيره - الهكر العربي</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #00f7ff;
+      font-family: 'Cairo', sans-serif;
+      padding: 20px;
+      text-align: center;
+      overflow-x: hidden;
+    }
+    .glow {
+      font-size: 20px;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 10px #00f7ff, 0 0 20px #00f7ff, 0 0 30px #00f7ff;
+      }
+      to {
+        text-shadow: 0 0 20px #00d9ff, 0 0 30px #00d9ff, 0 0 40px #00d9ff;
+      }
+    }
+    .menu {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      background: #00f7ff;
+      padding: 10px;
+      cursor: pointer;
+      border-radius: 5px;
+      color: black;
+    }
+    .sidebar {
+      display: none;
+      position: fixed;
+      top: 50px;
+      left: 10px;
+      background: #111;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    .sidebar a {
+      color: #00f7ff;
+      display: block;
+      margin: 5px 0;
+    }
+    .upload {
+      margin-top: 30px;
+    }
+    .counter {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <div class="menu" onclick="toggleMenu()">☰</div>
+  <div class="sidebar" id="sidebar">
+    <a href="https://t.me/VlP_l1" target="_blank">تيليجرام</a>
+    <a href="https://www.instagram.com/yusef_.moh.ammed" target="_blank">انستجرام</a>
+  </div>
+
+  <h1 class="glow">⚡ روني البحيره - الهكر العربي ⚡</h1>
+  <p class="glow">✦ صلي علي سيدنا محمد ♥️</p>
+  <p class="glow">✦ مجرد دخولك هنا انت تحت حمايتي الشخصية 👨‍💻</p>
+  <p class="glow">
+    ✦ اسمي روني البحيره، رمز للهيبة والذكاء التقني.<br>
+    ✦ بدأت من لا شيء، والنهارده بفضل الله شغال في أعلى مستويات البرمجة والحماية.<br>
+    ✦ مطور محترف، مهووس بالكود، وقلبي دايمًا مع الناس الغلابة قبل القوية.<br>
+    ✦ لو دخلت هنا، فاعرف إنك في مملكة الراحة والبرمجة والتقنية.<br>
+    ✦ أنا مش بس مبرمج... أنا صانع حلول، وبنّاء أنظمة، وقائد تقني بفكر مختلف.<br>
+    ✦ بحب أساعد، وعمري ما استخدمت قوتي التقنية في الأذى.<br>
+    ✦ الكلمة مني حماية، والنصيحة مني كنز، والبوتات اللي بعملها تشهد.<br>
+    ✦ مجرد دخولك هنا... اعرف إنك في ضهر روني البحيره... وده لوحده أمان 💪<br>
+  </p>
+
+  <div class="upload">
+    <form onsubmit="return checkPassword()">
+      <input type="file" required><br><br>
+      <input type="password" id="password" placeholder="كلمة السر"><br><br>
+      <input type="submit" value="ارفع الملف">
+    </form>
+    <p id="msg" class="glow"></p>
+  </div>
+
+  <div class="counter glow">
+    👁 عدد الزوار: <span id="visits">7078</span>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('sidebar');
+      menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+    }
+
+    function checkPassword() {
+      const pass = document.getElementById("password").value;
+      const msg = document.getElementById("msg");
+      if (pass === "19022") {
+        msg.innerText = "✅ تم رفع الملف بنجاح (تجريبي)";
+      } else {
+        msg.innerText = "❌ كلمة السر غير صحيحة";
+      }
+      return false;
+    }
+
+    let visits = 7078;
+    setInterval(() => {
+      visits++;
+      document.getElementById("visits").innerText = visits;
+    }, 2000);
+  </script>
+</body>
+</html>
