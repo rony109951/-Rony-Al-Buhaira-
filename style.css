@@ -1,0 +1,47 @@
+body {
+  background: black;
+  color: white;
+  font-family:  Arial , sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+.glow {
+  font-size: 20px;
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #0ff, 0 0 10px #0ff;
+  }
+  to {
+    text-shadow: 0 0 15px #0ff, 0 0 30px #0ff;
+  }
+}
+
+.images img {
+  width: 150px;
+  border-radius: 12px;
+  margin: 10px;
+  box-shadow: 0 0 20px cyan;
+}
+
+form {
+  margin-top: 20px;
+}
+
+input, button {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 8px;
+  border: none;
+}
+
+.social a {
+  color: cyan;
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+  margin-top: 10px;
+}
