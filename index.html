@@ -2,122 +2,114 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>روني البحيره - الهكر العربي</title>
-
-  <!-- كود التحقق من Google -->
-  <meta name="google-site-verification" content="google45469323a177ffd4.html">
-
+  <meta name="description" content="روني البحيره - الهكر العربي، مطور محترف، مهووس بالأمان والبرمجة، اكتشف عالم روني البحيره">
+  <meta name="keywords" content="روني البحيره, الهكر العربي, مبرمج, امن معلومات, بوت واتساب, هاكر اخلاقي">
+  <meta name="author" content="روني البحيره">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
+    @import url( https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap );
+
     body {
-      background-color: #000;
-      color: #00f7ff;
+      margin: 0;
+      padding: 0;
       font-family:  Cairo , sans-serif;
-      padding: 20px;
-      text-align: center;
-      overflow-x: hidden;
+      background-color: #0d0d0d;
+      color: white;
     }
-    .glow {
-      font-size: 20px;
+
+    .hero {
+      background-image: url( image1.jpg );
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .hero h1 {
+      font-size: 50px;
+      text-shadow: 0 0 20px #00ffff;
       animation: glow 2s ease-in-out infinite alternate;
     }
+
+    .hero img {
+      width: 180px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      border: 4px solid #00ffff;
+    }
+
     @keyframes glow {
-      from {
-        text-shadow: 0 0 10px #00f7ff, 0 0 20px #00f7ff, 0 0 30px #00f7ff;
-      }
-      to {
-        text-shadow: 0 0 20px #00d9ff, 0 0 30px #00d9ff, 0 0 40px #00d9ff;
-      }
+      from { text-shadow: 0 0 10px #00ffff; }
+      to { text-shadow: 0 0 20px #00ffff, 0 0 30px #00ffff; }
     }
-    .menu {
-      position: fixed;
-      top: 10px;
-      left: 10px;
-      background: #00f7ff;
-      padding: 10px;
-      cursor: pointer;
-      border-radius: 5px;
-      color: black;
+
+    .content {
+      background-color: #111;
+      padding: 40px 20px;
+      text-align: center;
     }
-    .sidebar {
-      display: none;
-      position: fixed;
-      top: 50px;
-      left: 10px;
-      background: #111;
-      padding: 10px;
-      border-radius: 5px;
+
+    .content h2 {
+      color: #00ffff;
     }
-    .sidebar a {
-      color: #00f7ff;
-      display: block;
-      margin: 5px 0;
-    }
-    .upload {
-      margin-top: 30px;
-    }
-    .counter {
-      margin-top: 20px;
+
+    .content p {
       font-size: 18px;
+      line-height: 1.8;
+      color: #ccc;
+    }
+
+    .footer {
+      background-color: #000;
+      color: #888;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    .links a {
+      color: #00ffff;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    .glow {
+      text-shadow: 0 0 10px #00ffff;
     }
   </style>
 </head>
 <body>
-  <div class="menu" onclick="toggleMenu()">☰</div>
-  <div class="sidebar" id="sidebar">
-    <a href="https://t.me/VlP_l1" target="_blank">تيليجرام</a>
-    <a href="https://www.instagram.com/yusef_.moh.ammed" target="_blank">انستجرام</a>
+
+  <div class="hero">
+    <img src="image2.jpg" alt="روني البحيره">
+    <h1>روني البحيره</h1>
+    <p class="glow">الهكر العربي 👨‍💻</p>
   </div>
 
-  <h1 class="glow">⚡ روني البحيره - الهكر العربي ⚡</h1>
-  <p class="glow">✦ صلي علي سيدنا محمد ♥️</p>
-  <p class="glow">✦ مجرد دخولك هنا انت تحت حمايتي الشخصية 👨‍💻</p>
-  <p class="glow">
-    ✦ اسمي روني البحيره، رمز للهيبة والذكاء التقني.<br>
-    ✦ بدأت من لا شيء، والنهارده بفضل الله شغال في أعلى مستويات البرمجة والحماية.<br>
-    ✦ مطور محترف، مهووس بالكود، وقلبي دايمًا مع الناس الغلابة قبل القوية.<br>
-    ✦ لو دخلت هنا، فاعرف إنك في مملكة الراحة والبرمجة والتقنية.<br>
-    ✦ أنا مش بس مبرمج... أنا صانع حلول، وبنّاء أنظمة، وقائد تقني بفكر مختلف.<br>
-    ✦ بحب أساعد، وعمري ما استخدمت قوتي التقنية في الأذى.<br>
-    ✦ الكلمة مني حماية، والنصيحة مني كنز، والبوتات اللي بعملها تشهد.<br>
-    ✦ مجرد دخولك هنا... اعرف إنك في ضهر روني البحيره... وده لوحده أمان 💪<br>
-  </p>
-
-  <div class="upload">
-    <form onsubmit="return checkPassword()">
-      <input type="file" required><br><br>
-      <input type="password" id="password" placeholder="كلمة السر"><br><br>
-      <input type="submit" value="ارفع الملف">
-    </form>
-    <p id="msg" class="glow"></p>
+  <div class="content">
+    <h2>من أنا؟</h2>
+    <p>
+      ✦ مجرد دخولك هنا... انت تحت حمايتي الشخصية 👨‍💻<br><br>
+      ✦ أنا روني البحيره، الهكر العربي، مبرمج محترف ومهووس بالأمان السيبراني، بدأت رحلتي من الصفر ووصلت لقمم البرمجة والاختراق الأخلاقي.<br><br>
+      ✦ أساعد الناس وأبني بوتات ومنصات تحميهم وتفيدهم، واللي يعرفني يعرف إني دايمًا في ضهر الضعيف.<br><br>
+      ✦ هدفي أنشر الوعي والاحتراف في الوطن العربي، وإن كل شاب عربي يبقى عنده أداة تساعده بدل ما يقع ضحية.<br><br>
+      ✦ اسأل عني البوتات، والمواقع، والمبرمجين... هيقولولك مين هو روني البحيره.
+    </p>
+    <div class="links">
+      <a href="https://t.me/VlP_l1" target="_blank">تيليجرام</a>
+      <a href="https://www.instagram.com/yusef_.moh.ammed" target="_blank">انستجرام</a>
+    </div>
   </div>
 
-  <div class="counter glow">
-    👁 عدد الزوار: <span id="visits">7078</span>
+  <div class="footer">
+    &copy; 2025 روني البحيره - جميع الحقوق محفوظة.
   </div>
 
-  <script>
-    function toggleMenu() {
-      const menu = document.getElementById( sidebar );
-      menu.style.display = menu.style.display ===  block  ?  none  :  block ;
-    }
-
-    function checkPassword() {
-      const pass = document.getElementById("password").value;
-      const msg = document.getElementById("msg");
-      if (pass === "19022") {
-        msg.innerText = "✅ تم رفع الملف بنجاح (تجريبي)";
-      } else {
-        msg.innerText = "❌ كلمة السر غير صحيحة";
-      }
-      return false;
-    }
-
-    let visits = 7078;
-    setInterval(() => {
-      visits++;
-      document.getElementById("visits").innerText = visits;
-    }, 2000);
-  </script>
 </body>
 </html>
